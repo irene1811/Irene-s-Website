@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="Style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+
+<body onload="myMove()">
+
+<div id="menu">
+  <a href="Home.html">Home</a>
+  <a href="edited new portfolio.html">Coding Projects</a>
+  <a href="About Me.html">About</a>
+<hr>
+</div>
+
+<h1 title="Done With Girls Who Code">
+  <span Style="color:black">CODING</span>
+  <span style="color:grey">PROJECTS</span>
+</h1>
+
+
+
+
+<!---PICTURES -->
+<!-- computer picture -->
+<div id="computer">
+  <img src="Computer.png" alt="my laptop" style="width:15%;height:15%;">
+</div>
+<!-- clink sound effect -->
+<div id= "clink">
+  <img src="Clink.png" alt="clink" style="width:2%; height:2%;">
+</div>
+<!-- bubbles -->
+<img id= "bubble1" src="bubbleone.png" style="width:4%; height:5.4%;">
+<img id= "bubble2" src="bubbleone.png" style="width:3%; height:3.4%;">
+<img id= "bubble3" src="bubble3.png" style="width:5%; height:6.4%;">
+
+<a href="Coding Projects.html">
+<img id= "bubble4" src="bubble4.png" style="width:13%; height:25%;">
+</a>
+
+
+
+
+<script>
+function myMove() {
+  var elem = document.getElementById("computer");
+  var pos = 0;
+  var id = setInterval(frame, 2.5);
+  //alert("hi");
+  function frame() {
+    if (pos == 375) {
+      clearInterval(id);
+      var object = document.getElementById('clink');
+      object.style.visibility = 'visible';
+      var delayMillis = 200;
+
+      setTimeout(function() {
+      var object = document.getElementById('clink');
+      object.style.visibility = 'hidden';
+      }, delayMillis);
+
+      var delayMillis = 300;
+      setTimeout(function bubs() {
+        var bubble1 = document.getElementById('bubble1');
+        bubble1.style.visibility = 'visible';
+      }, delayMillis);
+
+
+      var delayMillis = 400;
+      setTimeout(function bubs() {
+      var object = document.getElementById('bubble3');
+      object.style.visibility = 'visible';
+      }, delayMillis);
+
+      var delayMillis = 500;
+      setTimeout(function bubsa() {
+      var object = document.getElementById('bubble2');
+      object.style.visibility = 'visible';
+      }, delayMillis);
+
+      var delayMillis = 600;
+      setTimeout(function bubsal() {
+      var object = document.getElementById('bubble4');
+      object.style.visibility = 'visible';
+      }, delayMillis);
+
+    }
+    else {
+      var object = document.getElementById('clink');
+      object.style.visibility = 'hidden';
+      pos++;
+      elem.style.top = pos + 'px';
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>

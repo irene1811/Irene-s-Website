@@ -1,0 +1,80 @@
+body{font-family: 'Abel', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 300%;
+  padding-top: 50px;
+}
+h2{
+  font-size: 180%;
+  padding-left: 200px;
+  padding-right: 200px;
+  ;
+}
+
+p{
+  font-size: 110%;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+#menu {
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.game {
+  width:970;
+  height:804;
+}
+
+a:link, a:visited,a:hover,a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 130%;
+    padding-left: 20px;
+
+}
+#computer {
+  position: relative;
+  text-align: center;
+}
+#clink {
+  visibility: hidden;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  right: 110px;
+  top: 250px;
+}
+#bubble1{
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  right: 530px;
+  bottom:170px;
+}
+#bubble2{
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  right: 430px;
+  bottom:240px;
+}
+#bubble3{
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  right: 500px;
+  bottom:250px;
+}
+#bubble4{
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  right: 300px;
+  bottom:280px;
+}
+#bubble4:hover {
+  opacity: 0.5;
+}
